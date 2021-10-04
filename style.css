@@ -1,24 +1,20 @@
 
+/* Navbar CSS*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  min-height: 100vh;
-  background: #dcdcdc;
-}
-.filter {
+
+.navbar__container {
   display: flex;
   margin: 10px;
   justify-content: center;
   align-items: center;
 }
-.filter li {
+
+.navbar__container li {
   list-style: none;
   background-color: #eee;
   padding: 8px 20px;
@@ -26,15 +22,25 @@
   letter-spacing: 1px;
   cursor: pointer;
 }
-.filter li.active,
-.filter li:hover {
-  background-color: #03a9f4;
+.navbar__container li.active,
+.navbar__container li:hover {
+  background-color: #dd9849;
   color: #fff;
 }
+
 @media (max-width: 800px) {
-  .filter {
+  .navbar__container {
     flex-direction: column;
   }
+}
+
+/* Hero CSS */
+.main__container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  background: #dcdcdc;
 }
 
 .listPro {
@@ -45,18 +51,21 @@
   grid-gap: 20px;
   padding: 20px;
 }
+
 .listPro .card {
   max-width: 250px;
   height: 430px;
   width: 100%;
   background: #fff;
 }
+
 .listPro .card .imgBx {
   position: relative;
   width: 100%;
   height: 310px;
   overflow: hidden;
 }
+
 .listPro .card .imgBx img {
   position: absolute;
   top: 0;
@@ -67,43 +76,53 @@
   transition: 0.5s ease-in-out;
   transform-origin: right;
 }
+
 .listPro .card:hover .imgBx img {
   transform: scale(1.5);
 }
+
 .listPro .card .content {
   padding: 10px;
 }
+
 .listPro .card .content .productName h3 {
   font-size: 18px;
   font-weight: 500;
-  color: #333;
+  color: #131313;
   margin: 5px 0;
 }
+
 .listPro .card .content .price_rating {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .listPro .card .content .price_rating h2 {
   font-size: 20px;
   color: #ff2020;
   font-weight: 500;
 }
+
 .listPro .card .content .price_rating .fa {
   color: #ffd513;
   cursor: pointer;
 }
+
 .listPro .card .content .price_rating .fa.grey {
   color: #ccc;
 }
+
 .listPro .card:hover .action li {
   transform: translateX(0px);
 }
+
 .action {
   position: absolute;
   top: 10px;
   right: 10px;
 }
+
 .action li {
   position: relative;
   list-style: none;
@@ -118,12 +137,15 @@
   transform: translateX(60px);
   transition: transform 0.5s;
 }
+
 .action li:nth-child(2) {
   transition-delay: 0.15s;
 }
+
 .action li:nth-child(3) {
   transition-delay: 0.3s;
 }
+
 .action li span {
   position: absolute;
   right: 50px;
@@ -132,7 +154,7 @@
   white-space: nowrap;
   padding: 4px 6px;
   background: #fff;
-  color: #333;
+  color: #131313;
   font-weight: 500;
   font-size: 12px;
   border-radius: 4px;
@@ -140,14 +162,17 @@
   opacity: 0;
   transition: 0.5s r;
 }
+
 .action li:hover {
   background: #ff2020;
   color: #fff;
 }
+
 .action li:hover span {
   opacity: 1;
   transform: translateY(-50%) translateX(0px);
 }
+
 .action li span::before {
   content: "";
   position: absolute;
@@ -158,6 +183,7 @@
   background: #fff;
   transform: translateX(-50%) rotate(45deg);
 }
+
 .card.hide {
   display: none;
   width: 0;
@@ -165,34 +191,35 @@
   overflow: hidden;
 }
 
-.center {
+/* Footer CSS */
+.footer__container {
   text-align: center;
-  background: #dcdcdc;
+  background: #fff;
 }
 
 .pagination {
   display: inline-block;
-  background: #dcdcdc;
+  background: #fff;
 }
 
 .pagination button {
   cursor: pointer;
-  color: black;
+  color: #131313;
   float: left;
   padding: 8px 16px;
   text-decoration: none;
   transition: background-color 0.3s;
-  border: 1px solid #ddd;
+  border: 1px solid #fff;
   margin: 0 4px;
 }
 .pagination button.active {
-  background-color: #03a9f4;
-  color: white;
-  border: 1px solid #03a9f4;
+  background-color: #dd9849;
+  color: #fff;
+  border: 1px solid #dd9849;
 }
 
 .pagination button:hover:not(.active) {
-  background-color: #03a9f4;
-  color: white;
+  background-color: #ecc478;
+  color: #fff;
 }
 

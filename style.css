@@ -1,4 +1,3 @@
-
 /* Navbar CSS*/
 * {
   margin: 0;
@@ -43,7 +42,7 @@
   background: #dcdcdc;
 }
 
-.listPro {
+.list__product {
   position: relative;
   width: 1200px;
   display: grid;
@@ -52,21 +51,21 @@
   padding: 20px;
 }
 
-.listPro .card {
+.list__product .card {
   max-width: 250px;
   height: 430px;
   width: 100%;
   background: #fff;
 }
 
-.listPro .card .imgBx {
+.list__product .card .imgBx {
   position: relative;
   width: 100%;
   height: 310px;
   overflow: hidden;
 }
 
-.listPro .card .imgBx img {
+.list__product .card .imgBx img {
   position: absolute;
   top: 0;
   left: 0;
@@ -77,43 +76,43 @@
   transform-origin: right;
 }
 
-.listPro .card:hover .imgBx img {
+.list__product .card:hover .imgBx img {
   transform: scale(1.5);
 }
 
-.listPro .card .content {
+.list__product .card .content {
   padding: 10px;
 }
 
-.listPro .card .content .productName h3 {
+.list__product .card .content .productName h3 {
   font-size: 18px;
   font-weight: 500;
   color: #131313;
   margin: 5px 0;
 }
 
-.listPro .card .content .price_rating {
+.list__product .card .content .price_rating {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.listPro .card .content .price_rating h2 {
+.list__product .card .content .price_rating h2 {
   font-size: 20px;
   color: #ff2020;
   font-weight: 500;
 }
 
-.listPro .card .content .price_rating .fa {
+.list__product .card .content .price_rating .fa {
   color: #ffd513;
   cursor: pointer;
 }
 
-.listPro .card .content .price_rating .fa.grey {
+.list__product .card .content .price_rating .fa.grey {
   color: #ccc;
 }
 
-.listPro .card:hover .action li {
+.list__product .card:hover .action li {
   transform: translateX(0px);
 }
 
@@ -197,12 +196,12 @@
   background: #fff;
 }
 
-.pagination {
+.footer__pagination {
   display: inline-block;
   background: #fff;
 }
 
-.pagination button {
+.footer__pagination button {
   cursor: pointer;
   color: #131313;
   float: left;
@@ -212,14 +211,13 @@
   border: 1px solid #fff;
   margin: 0 4px;
 }
-.pagination button.active {
+.footer__pagination button.active {
   background-color: #dd9849;
   color: #fff;
   border: 1px solid #dd9849;
 }
 
-.pagination button:hover:not(.active) {
+.footer__pagination button:hover:not(.active) {
   background-color: #ecc478;
   color: #fff;
 }
-

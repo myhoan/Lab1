@@ -20,7 +20,7 @@ for (let i = 0; i < list.length; i++) {
         }
     })
 }
-const buttonsPagination = document.querySelectorAll(".pagination > button");
+const buttonsPagination = document.querySelectorAll(".footer__pagination > button");
 for (let i = 0; i < buttonsPagination.length; i++) {
     buttonsPagination[i].addEventListener("click", function () {
         for (let j = 0; j < buttonsPagination.length; j++) {
